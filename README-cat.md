@@ -16,7 +16,7 @@ Fair Queueing
 
 ### Input
 ```
-python3 fair-queuing-calculator.py tests/reduced_test.txt
+python3 fair-queuing-calculator.py tests/reduced_test.txt 
 ```
 ```
 ./fair-queuing-calculator.py tests/reduced_test.txt
@@ -43,7 +43,12 @@ Orden de trasmision (FQ):  2,1,3
 ```
 ### Output apliat
 ```
-
+python3 fair-queuing-calculator.py tests/reduced_test.txt -explain
+```
+```
+./fair-queuing-calculator.py tests/reduced_test.txt -explain
+```
+```
 Tabla inicial de tests/reduced_test.txt
 
 Paquete	Llegada	Medida	Flujo
