@@ -41,7 +41,7 @@ El tiempo de finalizacion para el paquete 3 es de 40
 Orden de trasmision (FQ):  2,1,3
 
 ```
-### Output apliat
+### Output apliat 
 ```
 python3 fair-queuing-calculator.py tests/reduced_test.txt -explain
 ```
