@@ -49,7 +49,7 @@ python3 fair-queuing-calculator.py tests/reduced_test.txt -explain
 ./fair-queuing-calculator.py tests/reduced_test.txt -explain
 ```
 ```
-Tabla inicial de tests/reduced_test.txt
+TTabla de tests/reduced_test.txt
 
 Paquete	Llegada	Medida	Flujo
 1 	 0 	 40 	 1
@@ -61,29 +61,26 @@ T-finalizacion segment=0
 Paquete analizado
 Paquete	Llegada	Medida	Flujo
 1	0	40	1
+Formula:
 Tiempo estimado = Max (T-finalizacion segment,T-Llegada)+Medida
 Tiempo estimado= Max( 0 , 0 )+ 40 = 40
 Tiempo llegada(0) <= T-finalizacion segment(0)? si
-El tiempo de finalizacion para el paquete 1 es de 40 añadido a la tabla de seleccion
-
-
+El tiempo de finalizacion para el paquete 1 es de 40  añadido a la tabla de seleccion añadido a la tabla de seleccion
 Paquete analizado
 Paquete	Llegada	Medida	Flujo
 2	0	30	1
+Formula:
 Tiempo estimado = Max (T-finalizacion segment,T-Llegada)+Medida
 Tiempo estimado= Max( 0 , 0 )+ 30 = 30
 Tiempo llegada(0) <= T-finalizacion segment(0)? si
-El tiempo de finalizacion para el paquete 2 es de 30 añadido a la tabla de seleccion
-
-
+El tiempo de finalizacion para el paquete 2 es de 30  añadido a la tabla de seleccion añadido a la tabla de seleccion
 Paquete analizado
 Paquete	Llegada	Medida	Flujo
 3	5	10	3
+Formula:
 Tiempo estimado = Max (T-finalizacion segment,T-Llegada)+Medida
 Tiempo estimado= Max( 0 , 5 )+ 10 = 15
 Tiempo llegada(5) <= T-finalizacion segment(0)? No
-
-
 Eliminado de la tabla inicial los paquetes que estan en la tabla de seleccion
 
 ------ paquetes seleccionar menor tiempo -------
@@ -100,18 +97,18 @@ T-finalizacion segment Anterior = 0
 Medida paquete seleccionado     = 30
 UPDATED T-finalizacion segment=30
 *** El paquete 2 llega con un tiempo de 30 ***
+Fin iteracion Algoritmo
 
 Inicio Algoritmo
 T-finalizacion segment=30
 Paquete analizado
 Paquete	Llegada	Medida	Flujo
 3	5	10	3
+Formula:
 Tiempo estimado = Max (T-finalizacion segment,T-Llegada)+Medida
 Tiempo estimado= Max( 30 , 5 )+ 10 = 40
 Tiempo llegada(5) <= T-finalizacion segment(30)? si
-El tiempo de finalizacion para el paquete 3 es de 40 añadido a la tabla de seleccion
-
-
+El tiempo de finalizacion para el paquete 3 es de 40  añadido a la tabla de seleccion añadido a la tabla de seleccion
 Eliminado de la tabla inicial los paquetes que estan en la tabla de seleccion
 
 ------ paquetes seleccionar menor tiempo -------
@@ -128,6 +125,7 @@ T-finalizacion segment Anterior = 30
 Medida paquete seleccionado     = 40
 UPDATED T-finalizacion segment=70
 *** El paquete 1 llega con un tiempo de 40 ***
+Fin iteracion Algoritmo
 
 Inicio Algoritmo
 T-finalizacion segment=70
@@ -146,7 +144,7 @@ T-finalizacion segment Anterior = 70
 Medida paquete seleccionado     = 10
 UPDATED T-finalizacion segment=80
 *** El paquete 3 llega con un tiempo de 40 ***
-
+Fin Algoritmo
 
 Orden de trasmision (FQ):  2,1,3
 ```
