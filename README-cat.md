@@ -4,9 +4,8 @@ Calcula l'ordre de trasmissión dels paquets amb una política de Fair Queuing o
 
 
 ## Millores fetes
-Alguns outputs s'han eliminat, però proximament estara disponible de nou
  - [x] Output explicatiu de Fair Queuing
- - [ ] Output resumit de Fair Queuing 
+ - [x] Output resumit de Fair Queuing 
  - [ ] Output explicatiu de Weighted Fair Queuing
  - [x] Output resumit de Weighted Fair Queuing (original)
  - [ ] Multiidioma?
@@ -24,8 +23,25 @@ python3 fair-queuing-calculator.py tests/reduced_test.txt
 ```
 
 
+### Output resumit
+```
+Tabla de tests/reduced_test.txt
 
-### Output
+Paquete	Llegada	Medida	Flujo
+1 	 0 	 40 	 1
+2 	 0 	 30 	 1
+3 	 5 	 10 	 3
+
+El tiempo de finalizacion para el paquete 1 es de 40 
+El tiempo de finalizacion para el paquete 2 es de 30 
+*** El paquete 2 llega con un tiempo de 30 ***
+El tiempo de finalizacion para el paquete 3 es de 40 
+*** El paquete 1 llega con un tiempo de 40 ***
+*** El paquete 3 llega con un tiempo de 40 ***
+Orden de trasmision (FQ):  2,1,3
+
+```
+### Output apliat
 ```
 
 Tabla inicial de tests/reduced_test.txt
