@@ -71,7 +71,10 @@ Orden de trasmision (FQ):  4,3,2,8,5,1,10,6,14,12,13,11,7,9,15
 ```
 python fair-queuing-calculator.py tests/parcial-19.txt -w 1:4,2:2,3:8,4:8
 ```
-
+#### Ejecución paso a paso
+```
+python fair-queuing-calculator.py tests/parcial-19.txt -explain -w 1:4,2:2,3:8,4:8 
+```
 ### Output
 ```
 Tabla de tests\parcial-19.txt
