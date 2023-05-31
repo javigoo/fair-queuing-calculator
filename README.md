@@ -7,6 +7,10 @@ Calcula el orden de trasmisión de paquetes con una política Fair Queuing o Wei
 ```
 python fair-queuing-calculator.py tests/parcial-19.txt
 ```
+#### Ejecución paso a paso
+```
+python fair-queuing-calculator.py tests/parcial-19.txt -explain 
+```
 
 ### Output
 ```
